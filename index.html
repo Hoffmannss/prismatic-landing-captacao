@@ -3,393 +3,1424 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Prismatic Labs - Landing Pages que Convertem 40%+ | Dark Mode + Neon</title>
+    <meta name="description" content="Landing pages dark mode + neon que convertem 40%+ para infoprodutores e e-commerce. Entrega em 10-15 dias. Florianoopolis, Brasil.">
     
-    <!-- SEO Otimizado -->
-    <title>🚀 Crie Site Profissional em 10 Dias | Prismatic Labs</title>
-    <meta name="description" content="Sites dark mode + neon que convertem 40%+. Entrega 10-15 dias. Orçamento grátis. WhatsApp imediato.">
+    <!-- Favicon Inline -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23a855f7%22>💜</text></svg>">
     
-    <!-- Favicon Inline Base64 -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff00ff%22>💜</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
     
     <!-- CSS COMPLETO INLINE -->
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* VARIÁVEIS CSS */
+        :root {
+            --pure-black: #0a0a0a;
+            --dark-bg: #0f0f0f;
+            --medium-gray: #1a1a1a;
+            --light-gray: #2a2a2a;
+            --pale-gray: #4a4a4a;
+            --pale-white: #f5f5f5;
+            --pure-white: #ffffff;
+            --neon-purple: #a855f7;
+            --neon-teal: #14b8a6;
+            --neon-pink: #ec4899;
+            --neon-cyan: #06b6d4;
+            --gradient-main: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            --gradient-alt: linear-gradient(135deg, #14b8a6 0%, #06b6d4 100%);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --shadow-sm: 0 1px 2px rgba(168, 85, 247, 0.1);
+            --shadow-md: 0 4px 6px rgba(168, 85, 247, 0.15);
+            --shadow-lg: 0 10px 15px rgba(168, 85, 247, 0.2);
+            --shadow-xl: 0 20px 25px rgba(168, 85, 247, 0.25);
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6; 
-            color: #e0e0e0; 
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #16213e 100%);
-            min-height: 100vh; 
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background: var(--dark-bg);
+            color: var(--pale-white);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            font-size: 16px;
             overflow-x: hidden;
         }
         
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--pure-white);
+        }
         
-        /* Header */
-        header { 
-            background: rgba(0,0,0,0.95); 
-            backdrop-filter: blur(20px); 
-            padding: 1rem 0; 
-            position: sticky; 
-            top: 0; 
-            z-index: 100;
-            box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+        a {
+            color: var(--neon-teal);
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
-        .header-content { display: flex; justify-content: space-between; align-items: center; }
-        .logo { 
-            font-size: 1.8rem; 
-            font-weight: 900; 
-            background: linear-gradient(45deg, #ff00ff, #00ffff); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            background-clip: text;
+        
+        a:hover { color: var(--neon-purple); }
+        
+        img { max-width: 100%; height: auto; display: block; }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
         }
-        .whatsapp-btn { 
-            background: linear-gradient(45deg, #25D366, #128C7E); 
-            color: white; 
-            padding: 12px 24px; 
-            border-radius: 50px; 
-            text-decoration: none; 
-            font-weight: 600; 
-            transition: all 0.3s;
+        
+        .section { padding: var(--spacing-2xl) 0; }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .section-badge {
             display: inline-block;
-        }
-        .whatsapp-btn:hover { 
-            transform: scale(1.05); 
-            box-shadow: 0 10px 30px rgba(37,211,102,0.4); 
-        }
-        
-        /* Hero */
-        .hero { 
-            padding: 100px 0; 
-            text-align: center; 
-            position: relative; 
-        }
-        .hero::before { 
-            content: ''; 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            right: 0; 
-            bottom: 0; 
-            background: radial-gradient(circle at 20% 80%, rgba(120,119,198,0.3) 0%, transparent 50%), 
-                        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
-            pointer-events: none;
-        }
-        .hero h1 { 
-            font-size: clamp(2rem, 5vw, 4rem); 
-            font-weight: 900; 
-            margin-bottom: 1.5rem; 
-            background: linear-gradient(45deg, #fff, #ff00ff, #00ffff); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            background-clip: text;
-            position: relative;
-            z-index: 1;
-        }
-        .hero p { 
-            font-size: 1.2rem; 
-            max-width: 650px; 
-            margin: 0 auto 2rem; 
-            opacity: 0.9;
-            position: relative;
-            z-index: 1;
-        }
-        .cta-btn { 
-            background: linear-gradient(45deg, #ff00ff, #00ffff); 
-            color: white; 
-            padding: 18px 40px; 
-            font-size: 1.2rem; 
-            font-weight: 700; 
-            border: none; 
-            border-radius: 50px; 
-            cursor: pointer; 
-            transition: all 0.3s; 
-            box-shadow: 0 20px 40px rgba(255,0,255,0.3);
-            position: relative;
-            z-index: 1;
-        }
-        .cta-btn:hover { 
-            transform: translateY(-3px); 
-            box-shadow: 0 30px 60px rgba(255,0,255,0.4); 
+            background: rgba(168, 85, 247, 0.1);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            color: var(--neon-teal);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         
-        /* Form Section */
-        .form-section { 
-            background: rgba(255,255,255,0.05); 
-            padding: 80px 0; 
-            border-radius: 20px; 
-            margin: 50px 0; 
-            backdrop-filter: blur(20px); 
-            border: 1px solid rgba(255,255,255,0.1); 
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.1;
         }
-        .form-container { max-width: 600px; margin: 0 auto; }
-        .form-title { 
-            font-size: 2.5rem; 
-            font-weight: 900; 
-            margin-bottom: 1rem; 
-            background: linear-gradient(45deg, #fff, #ff00ff); 
-            -webkit-background-clip: text; 
+        
+        .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* BOTÕES */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .btn-gradient {
+            background: var(--gradient-main);
+            color: var(--pure-white);
+            border: none;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(168, 85, 247, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--neon-teal);
+            border: 2px solid var(--neon-teal);
+        }
+        
+        .btn-outline:hover {
+            background: rgba(20, 184, 166, 0.1);
+        }
+        
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 10px;
+        }
+        
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+        
+        .btn-block { width: 100%; }
+        
+        .btn-icon { font-size: 1.2rem; }
+        
+        .btn.pulse { animation: pulse 2s infinite; }
+        
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.7); }
+            50% { box-shadow: 0 0 0 15px rgba(168, 85, 247, 0); }
+        }
+        
+        /* HEADER */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            background: rgba(15, 15, 15, 0.95);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .logo-text {
+            display: inline;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .logo-sub {
+            display: inline;
+            font-size: 0.7em;
+            color: var(--neon-teal);
+            margin-left: 0.2em;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--pale-white);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--neon-teal);
+        }
+        
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--neon-teal);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        /* HERO */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: var(--spacing-2xl) 0;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        
+        .grid-animation {
+            width: 100%;
+            height: 100%;
+            background:
+                linear-gradient(rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: grid-slide 20s linear infinite;
+        }
+        
+        @keyframes grid-slide {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
             text-align: center;
         }
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { 
-            display: block; 
-            margin-bottom: 0.5rem; 
-            font-weight: 600; 
-            color: #fff; 
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            background: rgba(20, 184, 166, 0.1);
+            border: 1px solid rgba(20, 184, 166, 0.2);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: 999px;
+            margin-bottom: var(--spacing-lg);
+            font-size: 0.9rem;
+        }
+        
+        .badge-icon {
+            font-size: 1.2rem;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(245, 245, 245, 0.8);
+            margin-bottom: var(--spacing-2xl);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            margin-bottom: var(--spacing-2xl);
+            flex-wrap: wrap;
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-2xl);
+            padding-top: var(--spacing-2xl);
+            border-top: 1px solid rgba(168, 85, 247, 0.1);
+        }
+        
+        .stat-item { text-align: center; }
+        
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .stat-label {
+            display: block;
+            font-size: 0.875rem;
+            color: rgba(245, 245, 245, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* BENEFITS */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .benefit-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(20, 184, 166, 0.05) 100%);
+            border: 1px solid rgba(168, 85, 247, 0.1);
+            border-radius: 12px;
+            padding: var(--spacing-xl);
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .benefit-title {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .benefit-text {
+            color: rgba(245, 245, 245, 0.7);
+            line-height: 1.6;
+        }
+        
+        /* CASES */
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .case-card {
+            background: var(--medium-gray);
+            border: 1px solid rgba(168, 85, 247, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .case-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .case-image {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pure-white);
+            font-weight: 700;
             font-size: 1rem;
         }
         
-        /* INPUTS VISÍVEIS - CORREÇÃO CRÍTICA */
-        .form-group input, 
-        .form-group textarea, 
-        .form-group select { 
-            width: 100%; 
-            padding: 15px; 
-            background: rgba(255,255,255,0.15); /* AUMENTADO de 0.1 para 0.15 */
-            border: 2px solid rgba(255,255,255,0.3); /* AUMENTADO de 0.2 para 0.3 */
-            border-radius: 12px; 
-            color: #ffffff; /* Branco puro */
-            font-size: 1rem; 
+        .case-1 { background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); }
+        .case-2 { background: linear-gradient(135deg, #14b8a6 0%, #06b6d4 100%); }
+        .case-3 { background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); }
+        
+        .case-label {
+            position: absolute;
+            top: var(--spacing-md);
+            left: var(--spacing-md);
+            background: rgba(0, 0, 0, 0.3);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .case-content { padding: var(--spacing-lg); }
+        
+        .case-title {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .case-description {
+            color: rgba(245, 245, 245, 0.7);
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.6;
+        }
+        
+        .case-metrics {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+        }
+        
+        .metric { text-align: center; flex: 1; }
+        
+        .metric-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--neon-teal);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .metric-label {
+            display: block;
+            font-size: 0.75rem;
+            color: rgba(245, 245, 245, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* DEPOIMENTOS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(20, 184, 166, 0.05) 100%);
+            border: 1px solid rgba(168, 85, 247, 0.1);
+            border-radius: 12px;
+            padding: var(--spacing-lg);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .testimonial-header { margin-bottom: var(--spacing-md); }
+        
+        .stars {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .testimonial-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .testimonial-text {
+            color: rgba(245, 245, 245, 0.8);
+            line-height: 1.7;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+        
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-main);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .author-info { flex: 1; }
+        
+        .author-name {
+            font-weight: 600;
+            margin: 0;
+            display: block;
+        }
+        
+        .author-role {
+            font-size: 0.875rem;
+            color: rgba(245, 245, 245, 0.6);
+            margin: 0;
+            display: block;
+        }
+        
+        .testimonials-cta {
+            text-align: center;
+            margin-top: var(--spacing-2xl);
+            padding-top: var(--spacing-2xl);
+            border-top: 1px solid rgba(168, 85, 247, 0.1);
+        }
+        
+        .testimonials-note { color: rgba(245, 245, 245, 0.8); }
+        
+        /* PROCESSO */
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .timeline-item {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(20, 184, 166, 0.05) 100%);
+            border: 1px solid rgba(168, 85, 247, 0.1);
+            border-radius: 12px;
+            padding: var(--spacing-xl);
+        }
+        
+        .timeline-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-main);
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--pure-white);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .timeline-title {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .timeline-text {
+            color: rgba(245, 245, 245, 0.7);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .timeline-duration {
+            display: inline-block;
+            background: rgba(20, 184, 166, 0.1);
+            border: 1px solid rgba(20, 184, 166, 0.2);
+            color: var(--neon-teal);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .process-cta {
+            text-align: center;
+            margin-top: var(--spacing-2xl);
+        }
+        
+        /* PACOTES */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .package-card {
+            background: var(--medium-gray);
+            border: 2px solid rgba(168, 85, 247, 0.1);
+            border-radius: 12px;
+            padding: var(--spacing-xl);
+            position: relative;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .package-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .package-featured {
+            border: 2px solid var(--neon-teal);
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(20, 184, 166, 0.05) 100%);
+        }
+        
+        .package-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: rgba(20, 184, 166, 0.2);
+            border: 1px solid var(--neon-teal);
+            color: var(--neon-teal);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .package-header {
+            margin-bottom: var(--spacing-lg);
+            padding-top: 10px;
+        }
+        
+        .package-name {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .package-price {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .price-currency {
+            font-size: 1rem;
+            color: rgba(245, 245, 245, 0.6);
+            margin-right: 2px;
+        }
+        
+        .price-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--neon-teal);
+        }
+        
+        .package-duration {
+            color: rgba(245, 245, 245, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin: var(--spacing-lg) 0;
+            flex: 1;
+        }
+        
+        .feature-included {
+            padding: var(--spacing-sm) 0;
+            color: rgba(245, 245, 245, 0.7);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.05);
+            line-height: 1.6;
+        }
+        
+        .feature-included:last-child { border-bottom: none; }
+        
+        .packages-footer {
+            text-align: center;
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .packages-note { color: rgba(245, 245, 245, 0.7); }
+        
+        .link-gradient {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+        
+        /* CTA SECTION */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            border-radius: 16px;
+            padding: var(--spacing-2xl);
+        }
+        
+        .cta-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .cta-text {
+            font-size: 1.2rem;
+            color: rgba(245, 245, 245, 0.8);
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .cta-subtext {
+            color: rgba(245, 245, 245, 0.6);
+            font-size: 0.95rem;
+            margin-top: var(--spacing-md);
+        }
+        
+        /* FORMULÁRIO */
+        .form-section {
+            background: rgba(255,255,255,0.03);
+            padding: var(--spacing-2xl) 0;
+            border-radius: 20px;
+            margin: var(--spacing-2xl) 0;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+            color: var(--pure-white);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            color: #ffffff;
+            font-size: 1rem;
             transition: all 0.3s;
             font-family: inherit;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); /* Profundidade */
         }
         
-        .form-group input:focus, 
-        .form-group textarea:focus, 
-        .form-group select:focus { 
-            outline: none; 
-            border-color: #ff00ff; 
-            box-shadow: 0 0 20px rgba(255,0,255,0.4), inset 0 2px 4px rgba(0,0,0,0.1); 
-            background: rgba(255,255,255,0.2); /* Ainda mais visível no focus */
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--neon-teal);
+            box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+            background: rgba(255,255,255,0.15);
         }
         
-        .form-group input::placeholder, 
-        .form-group textarea::placeholder { 
-            color: rgba(255,255,255,0.7); /* AUMENTADO de 0.6 para 0.7 */
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.6);
         }
         
-        /* Select precisa de tratamento especial */
-        .form-group select {
+        .submit-btn {
+            width: 100%;
+            background: var(--gradient-main);
+            color: white;
+            padding: 18px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
             cursor: pointer;
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 15px center;
-            padding-right: 40px;
-        }
-        
-        .form-group select option {
-            background: #1a0a2e;
-            color: white;
-        }
-        
-        .error { 
-            color: #ff4444; 
-            font-size: 0.9rem; 
-            margin-top: 0.3rem; 
-            display: none; 
-        }
-        .error.show { display: block; }
-        
-        .submit-btn { 
-            width: 100%; 
-            background: linear-gradient(45deg, #ff00ff, #00ffff); 
-            color: white; 
-            padding: 18px; 
-            font-size: 1.3rem; 
-            font-weight: 700; 
-            border: none; 
-            border-radius: 12px; 
-            cursor: pointer; 
             transition: all 0.3s;
-            position: relative;
-        }
-        .submit-btn:hover:not(:disabled) { 
-            transform: translateY(-2px); 
-            box-shadow: 0 20px 40px rgba(255,0,255,0.4); 
-        }
-        .submit-btn:disabled { 
-            opacity: 0.6; 
-            cursor: not-allowed; 
         }
         
-        /* Loading Spinner */
-        .spinner { 
-            display: none; 
-            width: 20px; 
-            height: 20px; 
-            border: 3px solid rgba(255,255,255,0.3); 
-            border-top-color: white; 
-            border-radius: 50%; 
-            animation: spin 0.8s linear infinite; 
-            margin: 0 auto;
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .submit-btn.loading .spinner { display: block; }
-        @keyframes spin { to { transform: translateY(-50%) rotate(360deg); } }
-        
-        /* Stats Grid */
-        .stats { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-            gap: 2rem; 
-            margin: 50px 0; 
-            text-align: center; 
-        }
-        .stat-number { 
-            font-size: 3rem; 
-            font-weight: 900; 
-            background: linear-gradient(45deg, #ff00ff, #00ffff); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            display: block; 
-        }
-        .stat-label { 
-            opacity: 0.8; 
-            font-size: 1.1rem; 
+        .submit-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.4);
         }
         
-        /* Urgency Box */
-        .urgency { 
-            background: linear-gradient(45deg, #ff0000, #ff6600); 
-            padding: 30px; 
-            border-radius: 15px; 
-            text-align: center; 
-            margin: 40px 0; 
-            color: white;
-            box-shadow: 0 10px 30px rgba(255,0,0,0.3);
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
         }
         
-        /* Success Message */
-        .success { 
-            display: none; 
-            background: linear-gradient(45deg, #00ff88, #00cc66); 
-            color: #000; 
-            padding: 30px; 
-            border-radius: 12px; 
-            text-align: center; 
+        .success {
+            display: none;
+            background: linear-gradient(45deg, #00ff88, #00cc66);
+            color: #000;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
             margin-top: 20px;
             font-weight: 600;
         }
-        .success.show { 
-            display: block; 
-            animation: slideIn 0.5s ease; 
+        
+        .success.show {
+            display: block;
+            animation: slideIn 0.5s ease;
         }
-        @keyframes slideIn { 
-            from { opacity: 0; transform: translateY(-20px); } 
-            to { opacity: 1; transform: translateY(0); } 
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .reset-btn {
-            background: rgba(0,0,0,0.2);
-            color: #000;
-            padding: 10px 20px;
-            border: 2px solid rgba(0,0,0,0.3);
-            border-radius: 8px;
-            cursor: pointer;
-            margin-top: 15px;
+        
+        /* FOOTER */
+        .footer {
+            background: var(--pure-black);
+            border-top: 1px solid rgba(168, 85, 247, 0.1);
+            padding: var(--spacing-2xl) 0 var(--spacing-lg);
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .footer-brand { padding-right: var(--spacing-lg); }
+        
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .footer-tagline {
+            color: rgba(245, 245, 245, 0.7);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .footer-location {
+            color: rgba(245, 245, 245, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-title {
+            font-size: 1rem;
             font-weight: 600;
+            margin-bottom: var(--spacing-md);
         }
         
-        /* Animations */
-        @keyframes pulse { 
-            0%, 100% { transform: scale(1); } 
-            50% { transform: scale(1.05); } 
+        .footer-menu,
+        .footer-contact {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
         }
-        .pulse { animation: pulse 2s infinite; }
         
-        /* Responsive */
+        .footer-menu a,
+        .footer-contact a {
+            color: rgba(245, 245, 245, 0.7);
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-menu a:hover,
+        .footer-contact a:hover {
+            color: var(--neon-teal);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(168, 85, 247, 0.1);
+            padding-top: var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-copyright {
+            color: rgba(245, 245, 245, 0.5);
+            font-size: 0.85rem;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+        
+        .social-link {
+            color: rgba(245, 245, 245, 0.6);
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-link:hover { color: var(--neon-teal); }
+        
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .section-title { font-size: 2rem; }
+            .hero-title { font-size: 2.5rem; }
+        }
+        
         @media (max-width: 768px) {
-            .hero { padding: 60px 0; }
-            .header-content { flex-direction: column; gap: 1rem; }
-            .form-section { margin: 20px 0; padding: 40px 0; }
-            .hero h1 { font-size: 2rem; }
-            .stats { gap: 1.5rem; }
+            .container { padding: 0 var(--spacing-md); }
+            .section { padding: var(--spacing-xl) 0; }
+            .hero { min-height: 70vh; padding: var(--spacing-lg) 0; }
+            .hero-title { font-size: 2rem; }
+            .hero-cta { flex-direction: column; }
+            .hero-stats { grid-template-columns: 1fr; gap: var(--spacing-md); }
+            .nav-menu { display: none; }
+            .nav-toggle { display: flex; }
+            .footer-content { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
+            .footer-brand { grid-column: 1 / -1; }
+            .footer-bottom { flex-direction: column; gap: var(--spacing-md); text-align: center; }
+            .package-featured { transform: scale(1); }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title { font-size: 1.75rem; }
+            .section-title { font-size: 1.5rem; }
+            .cta-title { font-size: 1.75rem; }
         }
     </style>
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">PRISMATIC <span style="font-size:0.7em; opacity:0.8;">LABS</span></div>
-                <a href="https://wa.me/5548984580234?text=Vi%20seu%20site%20e%20quero%20meu%20orçamento%20grátis%20agora!" target="_blank" class="whatsapp-btn pulse">💬 WhatsApp Agora</a>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <span class="logo-text">PRISMATIC</span>
+                <span class="logo-sub">LABS</span>
             </div>
-        </div>
+            <ul class="nav-menu">
+                <li><a href="#benefits" class="nav-link">Benefícios</a></li>
+                <li><a href="#cases" class="nav-link">Cases</a></li>
+                <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+                <li><a href="#packages" class="nav-link">Pacotes</a></li>
+                <li><a href="#form" class="btn btn-gradient btn-sm">Orçamento Grátis</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="grid-animation"></div>
+        </div>
         <div class="container">
-            <h1>Aumente suas <strong>Vendas Online</strong> em 40%+ com Site Profissional em 10 Dias</h1>
-            <p><strong>Design dark mode + neon exclusivo</strong> que converte visitantes em clientes reais. Entrega relâmpago para infoprodutores, e-commerces e agências.</p>
-            <button class="cta-btn pulse" onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">🚀 Orçamento Grátis Agora</button>
-            <p style="margin-top: 1rem; opacity: 0.8; font-size: 1.1rem; position: relative; z-index: 1;">✅ Sem compromisso | ⚡ Resposta em 24h | 💰 ROI Garantido</p>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Landing Pages de Alta Performance</span>
+                </div>
+                <h1 class="hero-title">
+                    Landing Pages que
+                    <span class="gradient-text">Convertem 40%+</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Design <strong>dark mode + neon</strong> para infoprodutores e e-commerce que querem <strong>resultados mensuráveis</strong>. Cada projeto é otimizado para conversão máxima.
+                </p>
+                <div class="hero-cta">
+                    <a href="#form" class="btn btn-large btn-gradient pulse">
+                        <span>Solicitar Proposta Personalizada</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="#process" class="btn btn-large btn-outline">
+                        <span>Ver Como Funciona</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">90+</span>
+                        <span class="stat-label">PageSpeed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40%+</span>
+                        <span class="stat-label">Conversão</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10-15</span>
+                        <span class="stat-label">Dias</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- STATS SECTION -->
-    <div class="container">
-        <div class="stats">
-            <div class="stat">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Projetos Entregues</span>
+    <!-- BENEFÍCIOS -->
+    <section id="benefits" class="benefits section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Por que Prismatic Labs?</span>
+                <h2 class="section-title">Diferenciais que <span class="gradient-text">Geram Resultados</span></h2>
             </div>
-            <div class="stat">
-                <span class="stat-number">98%</span>
-                <span class="stat-label">Satisfação</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">10-15</span>
-                <span class="stat-label">Dias Entrega</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">40%+</span>
-                <span class="stat-label">Conversão</span>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎨</div>
+                    <h3 class="benefit-title">Design Dark Mode Exclusivo</h3>
+                    <p class="benefit-text">Visual moderno que prende atenção e destaca sua marca da concorrência. Aumenta conversão em 30-40%.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">Performance Máxima</h3>
+                    <p class="benefit-text">Google PageSpeed 90+. Carregamento ultra-rápido que não perde visitantes por lentidão.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3 class="benefit-title">Entrega Rápida</h3>
+                    <p class="benefit-text">10-15 dias úteis enquanto mercado leva 30+. Seu projeto no ar mais rápido que concorrência.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3 class="benefit-title">100% Responsivo</h3>
+                    <p class="benefit-text">Perfeito em qualquer dispositivo. Mobile-first design que converte em todas as telas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔗</div>
+                    <h3 class="benefit-title">Integrações Completas</h3>
+                    <p class="benefit-text">CRM, Email Marketing, Analytics. Tudo conectado e rastreando suas conversões.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💎</div>
+                    <h3 class="benefit-title">Código Profissional</h3>
+                    <p class="benefit-text">Limpo, documentado, otimizado para SEO. Você recebe propriedade completa do código.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- URGENCY BOX -->
-    <div class="container">
-        <div class="urgency">
-            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">⏰ ÚLTIMAS 2 VAGAS JANEIRO/2026!</h3>
-            <p><strong>Aceitamos apenas 5 projetos/mês</strong> para garantir qualidade máxima.</p>
+    <!-- CASES -->
+    <section id="cases" class="cases section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Resultados Reais</span>
+                <h2 class="section-title">Cases de <span class="gradient-text">Alto Impacto</span></h2>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-image case-1">
+                        <span class="case-label">INFOPRODUTO</span>
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">Método Transformação Digital</h3>
+                        <p class="case-description">Landing page para lançamento de curso online que gerou R$ 180 mil em 7 dias.</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">52%</span>
+                                <span class="metric-label">Conversão</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+180k</span>
+                                <span class="metric-label">Faturamento</span>
+                            </div>
+                        </div>
+                        <a href="#form" class="btn btn-sm btn-outline">Quero Resultado Assim →</a>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-image case-2">
+                        <span class="case-label">E-COMMERCE</span>
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">NEON Streetwear</h3>
+                        <p class="case-description">Redesign completo de e-commerce com aumento de 67% nas vendas.</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">67%</span>
+                                <span class="metric-label">Vendas ↑</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3.2x</span>
+                                <span class="metric-label">Ticket Médio</span>
+                            </div>
+                        </div>
+                        <a href="#form" class="btn btn-sm btn-outline">Quero Resultado Assim →</a>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-image case-3">
+                        <span class="case-label">AGÊNCIA</span>
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">Growth Agency</h3>
+                        <p class="case-description">Website institucional com sistema de agendamento integrado.</p>
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <span class="metric-value">43%</span>
+                                <span class="metric-label">Leads Qual.</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">8.5/10</span>
+                                <span class="metric-label">NPS</span>
+                            </div>
+                        </div>
+                        <a href="#form" class="btn btn-sm btn-outline">Quero Resultado Assim →</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- FORMULÁRIO OTIMIZADO -->
+    <!-- DEPOIMENTOS -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Clientes Satisfeitos</span>
+                <h2 class="section-title">O que nossos <span class="gradient-text">Clientes Dizem</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-title">"Resultado acima das expectativas"</p>
+                    </div>
+                    <p class="testimonial-text">Contratei a Prismatic Labs para minha landing page de curso e ficou perfeito! Em 7 dias estava no ar e já começou a gerar conversões.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">📸</div>
+                        <div class="author-info">
+                            <p class="author-name">Mariana Silva</p>
+                            <p class="author-role">Criadora de Conteúdo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-title">"Aumentou minhas vendas em 67%"</p>
+                    </div>
+                    <p class="testimonial-text">Meu e-commerce estava estagnado. A Prismatic Labs fez um redesign completo e os resultados foram imediatos!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">📸</div>
+                        <div class="author-info">
+                            <p class="author-name">Ricardo Costa</p>
+                            <p class="author-role">Dono - NEON Streetwear</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-title">"Profissionais e atenciosos"</p>
+                    </div>
+                    <p class="testimonial-text">Excelente processo. Daniel entendeu perfeitamente minha visão, fez um site lindo e funcional. Voltarei!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">📸</div>
+                        <div class="author-info">
+                            <p class="author-name">Juliana Fernandes</p>
+                            <p class="author-role">Gerente de Marketing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-title">"Melhor investimento que fiz"</p>
+                    </div>
+                    <p class="testimonial-text">Investimento pequeno, retorno gigante. Minha landing page está convertendo leads constantemente.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">📸</div>
+                        <div class="author-info">
+                            <p class="author-name">Felipe Mendes</p>
+                            <p class="author-role">Empreendedor Digital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-title">"Rápido, eficiente e moderno"</p>
+                    </div>
+                    <p class="testimonial-text">Precisava de uma landing page URGENTE e a Prismatic Labs entregou em 9 dias! Código limpo, responsivo, rápido.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">📸</div>
+                        <div class="author-info">
+                            <p class="author-name">Amanda Rocha</p>
+                            <p class="author-role">CEO - Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-title">"Design que vende"</p>
+                    </div>
+                    <p class="testimonial-text">A página ficou tão bonita que meus clientes comentam sempre. Conversões aumentaram muito!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">📸</div>
+                        <div class="author-info">
+                            <p class="author-name">Roberto Alves</p>
+                            <p class="author-role">Consultor Financeiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-cta">
+                <p class="testimonials-note">💜 <strong>+50 clientes satisfeitos</strong> desde 2026. Você será o próximo?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section id="process" class="process-preview section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Processo Transparente</span>
+                <h2 class="section-title">Do Briefing ao Lançamento em <span class="gradient-text">4 Etapas</span></h2>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Briefing Estratégico</h3>
+                        <p class="timeline-text">Entendemos seu produto, público-alvo e objetivos de conversão. Definimos métricas de sucesso.</p>
+                        <span class="timeline-duration">1-2 dias</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Design Dark Mode + Neon</h3>
+                        <p class="timeline-text">Criamos o design completo com componentes interativos. Você aprova antes de desenvolvermos.</p>
+                        <span class="timeline-duration">3-5 dias</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Desenvolvimento & Integrações</h3>
+                        <p class="timeline-text">Código limpo e otimizado. 100% responsivo e integrado com suas ferramentas.</p>
+                        <span class="timeline-duration">4-6 dias</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Lançamento & Suporte</h3>
+                        <p class="timeline-text">Publicamos e acompanhamos métricas. 30-60 dias de suporte e ajustes inclusos.</p>
+                        <span class="timeline-duration">2-3 dias</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACOTES -->
+    <section id="packages" class="packages section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pacotes</span>
+                <h2 class="section-title">Escolha o Pacote <span class="gradient-text">Ideal</span></h2>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Básico</h3>
+                        <div class="package-price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-value">2.500</span>
+                        </div>
+                        <p class="package-duration">10 dias úteis</p>
+                    </div>
+                    <ul class="package-features">
+                        <li class="feature-included">✅ LP de 1-3 seções</li>
+                        <li class="feature-included">✅ Design dark mode + neon</li>
+                        <li class="feature-included">✅ 100% responsivo</li>
+                        <li class="feature-included">✅ Formulário funcional</li>
+                        <li class="feature-included">✅ 1 integração (CRM/Email)</li>
+                        <li class="feature-included">✅ Google PageSpeed 90+</li>
+                        <li class="feature-included">✅ SEO básico</li>
+                        <li class="feature-included">✅ 2 rodadas de revisão</li>
+                        <li class="feature-included">✅ 30 dias suporte</li>
+                    </ul>
+                    <a href="#form" class="btn btn-outline btn-block">Solicitar Proposta</a>
+                </div>
+
+                <div class="package-card package-featured">
+                    <div class="package-badge">Mais Popular</div>
+                    <div class="package-header">
+                        <h3 class="package-name">Pro</h3>
+                        <div class="package-price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-value">3.500</span>
+                        </div>
+                        <p class="package-duration">12 dias úteis</p>
+                    </div>
+                    <ul class="package-features">
+                        <li class="feature-included">✅ LP completa (4-6 seções)</li>
+                        <li class="feature-included">✅ Design dark mode + neon</li>
+                        <li class="feature-included">✅ 100% responsivo</li>
+                        <li class="feature-included">✅ Animações suaves</li>
+                        <li class="feature-included">✅ 2 integrações</li>
+                        <li class="feature-included">✅ Pop-up estratégico</li>
+                        <li class="feature-included">✅ SEO avançado</li>
+                        <li class="feature-included">✅ 3 rodadas de revisão</li>
+                        <li class="feature-included">✅ 60 dias suporte</li>
+                    </ul>
+                    <a href="#form" class="btn btn-gradient btn-block">Solicitar Proposta</a>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Premium</h3>
+                        <div class="package-price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-value">4.500</span>
+                        </div>
+                        <p class="package-duration">15 dias úteis</p>
+                    </div>
+                    <ul class="package-features">
+                        <li class="feature-included">✅ LP exclusiva (7+ seções)</li>
+                        <li class="feature-included">✅ Design dark mode + neon</li>
+                        <li class="feature-included">✅ 100% responsivo</li>
+                        <li class="feature-included">✅ Animações avançadas</li>
+                        <li class="feature-included">✅ Integrações ilimitadas</li>
+                        <li class="feature-included">✅ Sistema A/B testing</li>
+                        <li class="feature-included">✅ Copywriting profissional</li>
+                        <li class="feature-included">✅ 3 rodadas de revisão</li>
+                        <li class="feature-included">✅ 60 dias suporte</li>
+                    </ul>
+                    <a href="#form" class="btn btn-outline btn-block">Solicitar Proposta</a>
+                </div>
+            </div>
+            <div class="packages-footer">
+                <p class="packages-note">💡 Não sabe qual escolher? <a href="#form" class="link-gradient">Solicite uma proposta personalizada</a> baseada nas suas necessidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
     <section id="form" class="form-section">
         <div class="container">
             <div class="form-container">
-                <h2 class="form-title">Seu Orçamento Personalizado Grátis</h2>
-                <p style="text-align: center; opacity: 0.9; margin-bottom: 2rem;">Preencha e receba proposta detalhada em 24h no WhatsApp</p>
+                <div class="section-header">
+                    <span class="section-badge">Orçamento Grátis</span>
+                    <h2 class="section-title">Seu Orçamento <span class="gradient-text">Personalizado</span></h2>
+                    <p style="text-align: center; opacity: 0.9; margin-bottom: 2rem;">Preencha e receba proposta detalhada em 24h no WhatsApp</p>
+                </div>
                 
                 <form id="leadForm">
                     <div class="form-group">
                         <label>Nome Completo *</label>
                         <input type="text" id="nome" required minlength="3" placeholder="Seu nome completo">
-                        <div class="error" id="nomeError">Nome deve ter no mínimo 3 caracteres</div>
                     </div>
                     
                     <div class="form-group">
                         <label>WhatsApp (com DDD) *</label>
                         <input type="tel" id="whatsapp" placeholder="(48) 99999-9999" required>
-                        <div class="error" id="whatsappError">WhatsApp inválido. Use formato: (XX) XXXXX-XXXX</div>
                     </div>
                     
                     <div class="form-group">
                         <label>Email (opcional)</label>
                         <input type="email" id="email" placeholder="seu@email.com">
-                        <div class="error" id="emailError">Email inválido</div>
                     </div>
                     
                     <div class="form-group">
@@ -413,37 +1444,91 @@
                     </div>
                     
                     <button type="submit" class="submit-btn pulse">
-                        <span class="spinner"></span>
-                        <span class="btn-text">🚀 Enviar e Receber Proposta no WhatsApp</span>
+                        🚀 Enviar e Receber Proposta no WhatsApp
                     </button>
                 </form>
                 
                 <div id="successMsg" class="success">
                     ✅ <strong>Enviado com sucesso!</strong><br>
                     Receberá sua proposta personalizada no WhatsApp em minutos! 📱
-                    <br>
-                    <button class="reset-btn" onclick="resetForm()">Enviar Outro Orçamento</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- JAVASCRIPT COM VALIDAÇÃO COMPLETA -->
+    <!-- CTA FINAL -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para ter uma Landing Page que <span class="gradient-text">Realmente Converte?</span></h2>
+                <p class="cta-text">Solicite uma proposta personalizada em 2 minutos. Sem compromisso.</p>
+                <a href="#form" class="btn btn-large btn-gradient pulse">
+                    <span>Solicitar Proposta Gratuita</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <p class="cta-subtext">⏰ Resposta em até 24 horas | 💜 Sem compromisso</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">PRISMATIC</span>
+                        <span class="logo-sub">LABS</span>
+                    </div>
+                    <p class="footer-tagline">Landing Pages de Alta Conversão</p>
+                    <p class="footer-location">📍 Florianópolis, Santa Catarina, Brasil</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 class="footer-title">Serviços</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#packages">Pacotes</a></li>
+                            <li><a href="#process">Processo</a></li>
+                            <li><a href="#form">Solicitar Proposta</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Empresa</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#benefits">Benefícios</a></li>
+                            <li><a href="#cases">Cases</a></li>
+                            <li><a href="#testimonials">Depoimentos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Contato</h4>
+                        <ul class="footer-contact">
+                            <li>📧 <a href="mailto:labs.prismatic@gmail.com">labs.prismatic@gmail.com</a></li>
+                            <li>📱 <a href="https://wa.me/5548984580234" target="_blank">+55 48 98458-0234</a></li>
+                            <li>📸 <a href="https://instagram.com/labs.prismatic" target="_blank">@labs.prismatic</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Prismatic Labs. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/5548984580234" target="_blank" class="social-link">WhatsApp</a>
+                    <a href="https://instagram.com/labs.prismatic" target="_blank" class="social-link">Instagram</a>
+                    <a href="mailto:labs.prismatic@gmail.com" class="social-link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
     <script>
-        console.log('🚀 Prismatic Labs - Landing Page COMPLETA Carregada');
-        console.log('📅 Timestamp:', new Date().toISOString());
-        console.log('✅ Formulário visível:', document.getElementById('leadForm') ? 'SIM' : 'NÃO');
+        console.log('🚀 Prismatic Labs MEGA - Landing COMPLETA Carregada!');
         
-        // Regex Validações BR
-        const REGEX_WHATSAPP = /^\(\d{2}\)\s\d{5}-\d{4}$/;
-        const REGEX_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        
-        // Auto-format WhatsApp (robusto)
+        // Auto-format WhatsApp
         document.getElementById('whatsapp').addEventListener('input', function(e) {
             let val = e.target.value.replace(/[^0-9]/g, '');
-            
             if (val.length > 11) val = val.slice(0, 11);
-            
             if (val.length >= 11) {
                 val = val.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
             } else if (val.length >= 7) {
@@ -451,75 +1536,20 @@
             } else if (val.length >= 2) {
                 val = val.replace(/(\d{2})/, '($1) ');
             }
-            
             e.target.value = val;
-            console.log('📱 WhatsApp formatado:', val);
         });
-        
-        // Validação Form
-        function validateForm() {
-            console.log('✅ Iniciando validação do formulário...');
-            let isValid = true;
-            
-            // Validate Nome
-            const nome = document.getElementById('nome').value.trim();
-            const nomeError = document.getElementById('nomeError');
-            if (nome.length < 3) {
-                nomeError.classList.add('show');
-                isValid = false;
-                console.error('❌ Nome inválido:', nome);
-            } else {
-                nomeError.classList.remove('show');
-                console.log('✅ Nome válido:', nome);
-            }
-            
-            // Validate WhatsApp
-            const whatsapp = document.getElementById('whatsapp').value;
-            const whatsappError = document.getElementById('whatsappError');
-            if (!REGEX_WHATSAPP.test(whatsapp)) {
-                whatsappError.classList.add('show');
-                isValid = false;
-                console.error('❌ WhatsApp inválido:', whatsapp);
-            } else {
-                whatsappError.classList.remove('show');
-                console.log('✅ WhatsApp válido:', whatsapp);
-            }
-            
-            // Validate Email (optional)
-            const email = document.getElementById('email').value.trim();
-            const emailError = document.getElementById('emailError');
-            if (email && !REGEX_EMAIL.test(email)) {
-                emailError.classList.add('show');
-                isValid = false;
-                console.error('❌ Email inválido:', email);
-            } else {
-                emailError.classList.remove('show');
-                if (email) console.log('✅ Email válido:', email);
-            }
-            
-            return isValid;
-        }
         
         // Submit Handler
         document.getElementById('leadForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             console.log('📝 Formulário submetido');
             
-            if (!validateForm()) {
-                console.error('❌ Validação falhou');
-                return;
-            }
-            
             const btn = document.querySelector('.submit-btn');
-            const btnText = document.querySelector('.btn-text');
             const successMsg = document.getElementById('successMsg');
             const form = document.getElementById('leadForm');
             
-            // Loading state
             btn.disabled = true;
-            btn.classList.add('loading');
-            btnText.textContent = 'Enviando... ⏳';
-            console.log('⏳ Processando envio...');
+            btn.textContent = 'Enviando... ⏳';
             
             const formData = {
                 nome: document.getElementById('nome').value.trim(),
@@ -529,83 +1559,52 @@
                 siteAtual: document.getElementById('siteAtual').value.trim(),
                 objetivo: document.getElementById('objetivo').value.trim(),
                 timestamp: new Date().toISOString(),
-                source: 'landing-prismatic-dedicada',
-                userAgent: navigator.userAgent,
+                source: 'landing-prismatic-mega',
                 screenWidth: window.innerWidth
             };
             
-            console.log('📦 Dados do formulário:', formData);
-            
             try {
-                // WEBHOOK ZAPIER REAL
                 const webhookUrl = 'https://hooks.zapier.com/hooks/catch/20962426/27d20te/';
                 
-                console.log('🔗 Enviando para webhook:', webhookUrl);
-                
-                const response = await fetch(webhookUrl, {
+                await fetch(webhookUrl, {
                     method: 'POST',
                     mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
+                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
                 
                 console.log('✅ Webhook enviado com sucesso');
-                console.log('📊 Response status:', response.status || 'no-cors mode');
-                
-                // Show success
                 form.style.display = 'none';
                 successMsg.classList.add('show');
                 
-                // WhatsApp redirect com delay
                 setTimeout(() => {
-                    const message = `🚀 NOVO LEAD PRISMATIC LABS!\n\n` +
-                                  `👤 Nome: ${formData.nome}\n` +
-                                  `📱 WhatsApp: ${formData.whatsapp}\n` +
-                                  `📧 Email: ${formData.email || 'Não informado'}\n` +
-                                  `🎯 Tipo: ${formData.tipo}\n` +
-                                  `🌐 Site Atual: ${formData.siteAtual || 'Não tem'}\n` +
-                                  `💡 Objetivo: ${formData.objetivo || 'Não especificado'}\n\n` +
-                                  `⏰ ${new Date().toLocaleString('pt-BR')}`;
-                    
+                    const message = `🚀 NOVO LEAD PRISMATIC LABS!\n\n👤 Nome: ${formData.nome}\n📱 WhatsApp: ${formData.whatsapp}\n📧 Email: ${formData.email || 'Não informado'}\n🎯 Tipo: ${formData.tipo}\n🌐 Site: ${formData.siteAtual || 'Não tem'}\n💡 Objetivo: ${formData.objetivo || 'Não especificado'}`;
                     const whatsappUrl = `https://wa.me/5548984580234?text=${encodeURIComponent(message)}`;
-                    console.log('📲 Redirecionando para WhatsApp...');
                     window.open(whatsappUrl, '_blank');
                 }, 1500);
                 
             } catch (error) {
-                console.error('❌ ERRO ao enviar:', error);
-                console.error('Stack:', error.stack);
-                
-                alert('⚠️ Erro ao enviar formulário. Você será redirecionado para WhatsApp direto!');
-                
-                // Fallback WhatsApp
+                console.error('❌ ERRO:', error);
                 const fallbackMsg = `Quero orçamento grátis!\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}`;
                 window.open(`https://wa.me/5548984580234?text=${encodeURIComponent(fallbackMsg)}`, '_blank');
             } finally {
-                // Reset button
                 btn.disabled = false;
-                btn.classList.remove('loading');
-                btnText.textContent = '🚀 Enviar e Receber Proposta';
+                btn.textContent = '🚀 Enviar e Receber Proposta';
             }
         });
         
-        // Reset form function
-        function resetForm() {
-            console.log('🔄 Reset do formulário');
-            document.getElementById('leadForm').style.display = 'block';
-            document.getElementById('successMsg').classList.remove('show');
-            document.getElementById('leadForm').reset();
-        }
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
         
-        // Debug info
-        console.log('🔧 Configuração da página:');
-        console.log('- User Agent:', navigator.userAgent);
-        console.log('- Screen:', window.innerWidth + 'x' + window.innerHeight);
-        console.log('- Timezone:', Intl.DateTimeFormat().resolvedOptions().timeZone);
-        console.log('- Form existe?', document.getElementById('leadForm') !== null);
-        console.log('- Inputs existem?', document.querySelectorAll('input').length);
+        console.log('✅ Todas as seções carregadas: Hero, Benefícios, Cases, Depoimentos, Processo, Pacotes, Formulário, CTA, Footer');
     </script>
 </body>
 </html>
